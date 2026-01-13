@@ -56,17 +56,7 @@ Google Colab
 
 ## 5. Análise dos Resultados
 
-Os resultados obtidos mostram que a Busca Tabu foi capaz de reduzir significativamente
-o custo da solução inicial. As rotas finais apresentam melhor distribuição entre os
-ônibus e menor distância total percorrida.
-
-O gráfico gerado indica a convergência do algoritmo ao longo das iterações,
-confirmando a eficiência da heurística aplicada ao problema proposto.
-
----
 
 ## 6. Conclusão
 
-A heurística Busca Tabu mostrou-se adequada para o problema de roteamento de transporte
-de funcionários com janela de tempo. O método é flexível, eficiente e pode ser aplicado
-a problemas reais de maior porte, mantendo boas soluções em tempo computacional reduzido.
+
