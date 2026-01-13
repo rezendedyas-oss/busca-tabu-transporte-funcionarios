@@ -75,9 +75,10 @@ Tempo total: 68.70 minutos
 - Precisaria de mais tempo, desta forma saindo mais cedo
   
 
-## 6. Conclusão
+## 6. Considerações finais 
 
-- Trabalho futuro
-- Dificuldades
+- Trabalhos futuro
+- Desafios
+  
 
 
