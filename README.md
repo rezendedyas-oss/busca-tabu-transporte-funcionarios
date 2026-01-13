@@ -1,26 +1,72 @@
-# Busca Tabu aplicada ao transporte de funcionários
+# Busca Tabu aplicada ao transporte de funcionários com janela de tempo
 
-## Contexto
-Este trabalho aborda o problema de roteamento de ônibus para transporte
-de funcionários, considerando restrições de horário de saída e chegada.
+Este notebook apresenta a aplicação da heurística **Busca Tabu** ao problema de roteamento
+de ônibus para transporte de funcionários, considerando restrições de horário de saída
+e chegada.
 
-## Problema
-- 2 ônibus
-- 10 pontos de embarque
-- Saída da garagem: 06:00
-- Chegada máxima na empresa: 06:45
+---
 
-## Metodologia
-Foi utilizada a heurística de Busca Tabu para resolver o Problema de
-Roteamento de Veículos com Janela de Tempo (VRPTW), implementada em Python
-utilizando Jupyter Notebook.
+## 1. Descrição do Problema
 
-## Resultados
-A solução encontrada respeita a restrição de 45 minutos por rota,
-atendendo todos os pontos de embarque.
+A empresa analisada disponibiliza transporte coletivo para seus funcionários, operando com
+as seguintes características:
 
-## Ferramentas
-- Python
-- Google Colab
-- GitHub
+- Número de ônibus: 2  
+- Ponto inicial: garagem da empresa  
+- Horário de saída da garagem: 06:00  
+- Horário máximo de chegada à empresa: 06:45  
+- Número de pontos de embarque: 10
+- Velocidade de média 80 km/h 
 
+---
+
+## 2. Metodologia – Busca Tabu
+
+A **Busca Tabu** é uma meta-heurística baseada em busca local que explora iterativamente
+o espaço de soluções, evitando ciclos por meio do uso de uma **lista tabu**.
+
+Os principais elementos da Busca Tabu utilizados neste trabalho são:
+- uma solução inicial viável
+- uma estrutura de vizinhança
+- uma lista tabu para evitar a repetição de movimentos
+- a atualização contínua da melhor solução encontrada
+
+As modificações aplicadas às soluções são do tipo **3-ops**, permitindo inversões,
+trocas e realocações de clientes entre rotas.
+
+---
+
+## 3. Estrutura do Código
+
+O código utilizado neste trabalho foi fornecido pelo professor da disciplina.
+Foram realizadas adaptações apenas para fins de interpretação e apresentação dos resultados.
+
+O algoritmo é composto pelas seguintes etapas:
+- geração da vizinhança
+- filtragem de movimentos proibidos (tabu)
+- seleção do melhor vizinho
+- execução iterativa da Busca Tabu
+
+---
+
+## 4. Implementação do Código
+
+Google Colab 
+
+
+## 5. Análise dos Resultados
+
+Os resultados obtidos mostram que a Busca Tabu foi capaz de reduzir significativamente
+o custo da solução inicial. As rotas finais apresentam melhor distribuição entre os
+ônibus e menor distância total percorrida.
+
+O gráfico gerado indica a convergência do algoritmo ao longo das iterações,
+confirmando a eficiência da heurística aplicada ao problema proposto.
+
+---
+
+## 6. Conclusão
+
+A heurística Busca Tabu mostrou-se adequada para o problema de roteamento de transporte
+de funcionários com janela de tempo. O método é flexível, eficiente e pode ser aplicado
+a problemas reais de maior porte, mantendo boas soluções em tempo computacional reduzido.
