@@ -56,7 +56,28 @@ Google Colab
 
 ## 5. Análise dos Resultados
 
+- CUSTO FINAL (com penalidade se houver): 10173.2
+
+ROTAS FINAIS E TEMPOS:
+
+Ônibus 1
+Rota: [0, 4, 3, 1, 2, 5, 10]
+Distância total: 81.60 km
+Tempo total: 61.20 minutos
+✖ Violou a janela de tempo
+
+Ônibus 2
+Rota: [0, 6, 7, 8, 9, 10]
+Distância total: 91.60 km
+Tempo total: 68.70 minutos
+✖ Violou a janela de tempo
+
+- Precisaria de mais tempo, desta forma saindo mais cedo
+  
 
 ## 6. Conclusão
+
+- Trabalho futuro
+- Dificuldades
 
 
